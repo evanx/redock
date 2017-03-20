@@ -1,0 +1,31 @@
+{
+  "name": "redock",
+  "version": "0.1.1",
+  "description": "Redis based Docker container scheduler.",
+  "main": "lib/index.js",
+  "bin": {
+  },
+  "scripts": {
+    "lint": "eslint --cache src",
+    "start": "node7 --harmony lib/index.js"
+  },
+  "author": {
+    "url": "https://twitter.com/@evanxsummers"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^1.2.0",
+    "redis-app": "^0.13.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanx/redock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evanx/redock/issues"
+  },
+  "homepage": "https://github.com/evanx/redock#readme"
+}
