@@ -1,21 +1,21 @@
-# rehome
+# redock
 
 Redis based CMS
 
-<!--img src='https://raw.githubusercontent.com/evanx/rehome/master/docs/readme/images/main.png'-->
+<!--img src='https://raw.githubusercontent.com/evanx/redock/master/docs/readme/images/main.png'-->
 
 
 ## Installation
 
 ## Config
 
-See `lib/spec.js` https://github.com/evanx/rehome/blob/master/lib/spec.js
+See `lib/spec.js` https://github.com/evanx/redock/blob/master/lib/spec.js
 ```javascript
 ```
 
 ## Implementation
 
-See `lib/main.js` https://github.com/evanx/rehome/blob/master/lib/main.js
+See `lib/main.js` https://github.com/evanx/redock/blob/master/lib/main.js
 ```javascript
 ```
 
@@ -23,7 +23,7 @@ See `lib/main.js` https://github.com/evanx/rehome/blob/master/lib/main.js
 
 Uses application archetype: https://github.com/evanx/redis-app
 
-See `lib/index.js` https://github.com/evanx/rehome/blob/master/lib/index.js
+See `lib/index.js` https://github.com/evanx/redock/blob/master/lib/index.js
 ```javascript
 require('redis-app')(
     require('../package'),
@@ -39,7 +39,7 @@ where the `config` is extracted from the `spec` defaults and `process.env` overr
 
 ## Docker
 
-See `Dockerfile` https://github.com/evanx/rehome/blob/master/Dockerfile
+See `Dockerfile` https://github.com/evanx/redock/blob/master/Dockerfile
 ```
 FROM mhart/alpine-node:latest
 ADD package.json .
@@ -51,9 +51,9 @@ CMD ["node", "--harmony", "lib/index.js"]
 
 We can build as follows:
 ```shell
-docker build -t rehome https://github.com/evanx/rehome.git
+docker build -t redock https://github.com/evanx/redock.git
 ```
-where tagged as image `rehome`
+where tagged as image `redock`
 
 <hr>
 
